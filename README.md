@@ -2,8 +2,8 @@
 
 This repository implements a dynamic, LLM-powered multi-agent system using [LangGraph](https://github.com/langchain-ai/langgraph) and [LangChain](https://github.com/langchain-ai/langchain). It features a modular architecture that combines multiple specialized agents orchestrated by a Coordinator node, enabling intelligent, iterative processing of complex user queries.
 
-<img width="757" alt="image" src="https://github.com/user-attachments/assets/d1e7d6e6-5222-43ba-b10d-c6adf1dcdb72" />
-**Note:** Each script execution consumes a few thousand tokens, for example, the question mentioned consumed around 4,000 tokens.
+![image](https://github.com/user-attachments/assets/d1e7d6e6-5222-43ba-b10d-c6adf1dcdb72)
+> **Note:** Each script execution consumes a few thousand tokens, for example, the question mentioned consumed around 4,000 tokens.
 
 ---
 
