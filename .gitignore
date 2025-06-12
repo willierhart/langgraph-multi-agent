@@ -1,0 +1,42 @@
+# --- Environment Variables ---
+.env
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+pip-wheel-metadata/
+
+# --- Notebooks ---
+.ipynb_checkpoints/
+
+# --- Editors ---
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# --- OS Files ---
+.DS_Store
+Thumbs.db
+
+# --- Logs and Outputs ---
+*.log
+*.out
+*.tmp
+
+# --- Virtual Environments ---
+.venv/
+env/
+venv/
+.conda/
+
+# --- Other ---
+*.sqlite3
