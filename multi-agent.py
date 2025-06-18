@@ -116,20 +116,9 @@ def create_agent(prompt: str, temperature=0.5, agent_name: str = "Unnamed Agent"
 
     def agent(messages: List[BaseMessage]) -> BaseMessage:
         full_messages = [SystemMessage(content=prompt)] + messages
-
-        print(f"\n--- {agent_name} is processing ---")
-        for idx, msg in enumerate(full_messages):
-            role = type(msg).__name__
-            print(f"Input {idx+1} [{role}]: {msg.content}")
-
         response = llm.invoke(full_messages)
 
-        if hasattr(response, "usage") and response.usage:
-            print(f"{agent_name} used {response.usage.total_tokens} tokens.")
-        else:
-            print(f"{agent_name} token usage data is not available.")
-
-        print(f"--- {agent_name} finished ---\n")
+        print(f"\n--- {agent_name} OUTPUT ---\n{response.content}\n")
         return response
 
     return agent
